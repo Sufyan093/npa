@@ -22,7 +22,7 @@
             <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
             </div>
             <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
+                <span class="font top-title-2 text-white text-center navbar-brand mx-auto">
                     Tulsa BBQ Festival - Get your Tickets Today.Click here
                 </span>
             </div>
@@ -43,10 +43,10 @@
     <section title="Navbar" id="navbar">
         <nav class="navbar navbar-light bg-white px-4">
             <div class="container-fluid nav-mob">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="image/NPA.png" alt="" width="60%" class="d-inline-block align-text-top" />
                 </a>
-                <div class="d-flex gap-5 align-items-center px-5">
+                <div class="d-flex gap-5 align-items-center px-5 logged-navbar">
                     <a href="/index.html" class="logout_btn" type="button">
                         Log out
                     </a>
@@ -65,21 +65,24 @@
                     <li class=""><a href="#">Articles</a>
                     </li>
 
-                    <li class="mega-drop-down"><a href="#">Recipes</a>
+                    <li class="mega-drop-down"><a href="RecipesList.html">Recipes</a>
                         <div class="animated fadeIn mega-menu" style="z-index:2">
                             <div class="mega-menu-wrap px-3 py-5">
                                 <div class="row">
                                     <div class="col-md-2">
                                         <h4 class="row mega-title">Recipes</h4>
                                         <ul class="stander">
-                                            <li><a href="#">Beef</a></li>
-                                            <li><a href="#">Pork</a></li>
-                                            <li><a href="#">Poultry</a></li>
-                                            <li><a href="#">Seafood</a></li>
-                                            <li><a href="#">Sides</a></li>
-                                            <li><a href="#">Dips & Sauces</a></li>
-                                            <li><a href="#">Vegetables</a></li>
-                                            <li><a href="#">Rubs</a></li>
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Beef</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Pork</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Poultry</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Seafood</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Sides</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Dips & Sauces</a></li>
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Vegetables</a>
+                                            </li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Rubs</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-2">
@@ -119,9 +122,22 @@
                                     </div>
                                     <div class="col-md-4">
                                         <h4 class="row mega-title text-muted">Featured</h4>
-                                        <img class="img-responsive"
-                                            src="https://3.bp.blogspot.com/-rUk36pd-LbM/VcLb48X4f-I/AAAAAAAAGCI/Y_UxBAgEqwA/s1600/Magento_themes.jpg">
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <div>
+                                            <video id="featuredVideo" width="320" height="450" autoplay>
+                                                <source src="video/preview.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="slider-content">
+                                            <h5 class="featured-video-heading mb-3">Chipotie molasses barbecue sauce
+                                            </h5>
+                                        </div>
+                                        <div class="author-section d-flex gap-3 align-items-center">
+                                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                            <div class="d-flex flex-column">
+                                                <span class="author-name-video">by michael lane</span>
+                                                <span class="author-date-video">October 22,2022</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -130,11 +146,12 @@
 
 
 
-                    <li><a href="#">Videos</a></li>
+                    <li><a href="videolandingpage.html">Videos</a></li>
                     <li><a href="#">MemberShip</a></li>
 
                     <li class="blog-drop-down"><a href="#">Events By State</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li class="images-drop-down"><a href="#">Restaurant</a></li>
+                    <li><a href="RecipesLandingPage.html">Shop</a></li>
                     <a href="#" class="toggle-menu">
                         <i class="fas fa-bars"></i>
                     </a>
@@ -206,7 +223,7 @@
                                         <source src="video/test.mp4" type="video/mp4" />
                                     </video>
                                     <div class="player-controls position-relative">
-                                        <i id="play-button" class="far fa-play-circle play-btn"></i>
+                                        <i id="play-button" class="far fa-play-circle play-btn-medium"></i>
                                     </div>
                                 </div>
 
@@ -237,7 +254,7 @@
                                         <source src="video/test.mp4" type="video/mp4" />
                                     </video>
                                     <div class="player-controls position-relative">
-                                        <i id="play-button-2" class="far fa-play-circle play-btn"></i>
+                                        <i id="play-button-2" class="far fa-play-circle play-btn-medium"></i>
                                     </div>
                                 </div>
 
@@ -351,7 +368,10 @@
     </Section>
 
     <section class="px-2 mb-5">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video">
+        <h2 class="spolight-video-line">
+            <span>Spotlight video from your BBQ Experts</span>
+        </h2>
+        <!-- <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video">
             <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
             </div>
             <div class="mx-auto order-0">
@@ -364,7 +384,7 @@
                     <span class="all-videos">All Videos</span>
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </section>
 
     <section id="spolight-video" class="mb-5">
@@ -622,10 +642,13 @@
             <div class="col-12 mx-auto">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-6">
-                        <div class="d-flex justify-content-between align-items-center latest-bg px-3 mb-5">
+                        <h2 class="spolight-video-line mb-5">
+                            <span>Experts latest</span>
+                        </h2>
+                        <!-- <div class="d-flex justify-content-between align-items-center latest-bg px-3 mb-5">
                             <p class="Experts-latest py-2 mb-0">Experts latest</p>
                             <span class="all-experts">All Experts</span>
-                        </div>
+                        </div> -->
                         <div class="container-fluid">
                             <div class="col-12 mx-auto">
                                 <div class="row">
@@ -726,7 +749,8 @@
                                     </div>
 
                                     <div class="col-sm-6 col-md-6 col-lg-6">
-                                        <div class="d-flex gap-3 align-items-center justify-content-between">
+                                        <div
+                                            class=" author-section d-flex gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column">
                                                 <h5 class="video-heading mb-2">john Deary</h5>
                                                 <span class="expert-name-caption">how to cook a brisket in under</span>
@@ -737,7 +761,8 @@
                                     </div>
 
                                     <div class="col-sm-6 col-md-6 col-lg-6">
-                                        <div class="d-flex gap-3 align-items-center justify-content-between">
+                                        <div
+                                            class="author-section d-flex gap-3 align-items-center justify-content-between">
                                             <div class="d-flex flex-column">
                                                 <h5 class="video-heading mb-2">john Deary</h5>
                                                 <span class="expert-name-caption">how to cook a brisket in under</span>
@@ -761,10 +786,13 @@
 
 
                     <div class="col-sm-12 col-md-12 col-lg-5">
-                        <div class="d-flex justify-content-between align-items-center latest-bg px-3 mb-5">
+                        <h2 class="spolight-video-line mb-5">
+                            <span>cook these today</span>
+                        </h2>
+                        <!-- <div class="d-flex justify-content-between align-items-center latest-bg px-3 mb-5">
                             <p class="Experts-latest py-2 mb-0">cook these today</p>
                             <span class="all-experts">All Recipes</span>
-                        </div>
+                        </div> -->
                         <div>
                             <img src="image/secAimg-1.jpg" alt="" class="img-fluid cookie-img mb-4" />
                         </div>
@@ -787,7 +815,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex">
+                        <div class="d-flex mob-30min">
                             <div class="col-lg-2 d-flex align-items-center">
                                 <div class="timer-cirlce">
                                     <span class="time-counter">30</span>
@@ -810,22 +838,9 @@
 
 
     <section id="aritcles" class="px-2 mb-3">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    Articles
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-                <div class="navbar-nav ml-auto justify-content-end">
-                    <span class="all-videos">All Articles
-                    </span>
-                </div>
-            </div>
-        </nav>
-
+        <h2 class="spolight-video-line mb-5">
+            <span>Articles</span>
+        </h2>
         <div class="container-fluid">
             <div class="">
                 <div class="row">
@@ -924,7 +939,7 @@
                     </div>
 
 
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5">
                         <div class="contain">
                             <div id="owl-three" class="owl-carousel owl-theme">
                                 <div class="item">
@@ -976,7 +991,7 @@
                     </div>
 
 
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-2">
                         <div>
                             <p class="text-center follow-expert-heading py-3">Trending</p>
                         </div>
@@ -1045,21 +1060,10 @@
     </section>
 
     <section id="latest Recipes" class="px-2 mb-5">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    latest Recipes
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-                <div class="navbar-nav ml-auto justify-content-end">
-                    <span class="all-videos">All Recipes
-                    </span>
-                </div>
-            </div>
-        </nav>
+
+        <h2 class="spolight-video-line mb-5">
+            <span> latest Recipes</span>
+        </h2>
 
         <div class="container-fluid">
             <div class="col-12 mx-auto">
@@ -1277,16 +1281,10 @@
     </section>
 
     <section id="upcoming events" class="px-2 mb-5">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    upcoming events
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob"></div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>upcoming events</span>
+        </h2>
+
 
         <div class="container-fluid">
             <div class="col-12 mx-auto">
@@ -1374,7 +1372,7 @@
                         <div>
                             <p class="text-center follow-expert-heading py-3">filter by state</p>
                         </div>
-                        <div class="card border-0 card-shadow" style="width:300px">
+                        <div class="card border-0 card-shadow filter-card" style="width:300px">
                             <div class="card-body">
                                 <ul>
                                     <li>
@@ -1436,21 +1434,9 @@
     </section>
 
     <section id="featured eatries" class="px-2 mb-5">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    featured eateries
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-                <div class="navbar-nav ml-auto justify-content-end">
-                    <span class="all-videos">All Restaurants
-                    </span>
-                </div>
-            </div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>featured eateries</span>
+        </h2>
         <div class="container-fluid">
             <div class="col-12 mx-auto">
                 <div class="row">
@@ -1458,10 +1444,10 @@
                         <img src="image/food2.jpg" class="img-fluid featured-eateries-img mb-5" alt="image" />
                         <div class="author-section gap-3 mb-4">
                             <div class="row">
-                                <div class="col-2">
+                                <div class="col-sm-4 col-md-4 col-lg-2">
                                     <img src="image/random.jpg" class="img-fluid featured-avatar-author">
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-sm-12 col-md-8 col-lg-8">
                                     <h5 class="featured-eateries-heading">Chipotie molasses barbecue sauce</h5>
                                     <span class="upcoming-event-address">recipe by michael lane-612. south street, salt
                                         lake
@@ -1560,15 +1546,15 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul class="">
+                        <ul class="footer-ul-first-col mb-3">
                             <li>
                                 <h4 class="footer-heading-1 mb-3">Lorem Ipsum</h4>
                             </li>
-                            <li class="d-flex gap-2 align-items-center">
+                            <li class="d-flex gap-2 align-items-center footer-phon-sec">
                                 <strong class="phoneno">P.</strong>
                                 <p class="ph-no mb-0">217-597-8456</p>
                             </li>
-                            <li class="d-flex gap-2 align-items-center">
+                            <li class="d-flex gap-2 align-items-center footer-mail-sec">
                                 <strong class="email">E.</strong>
                                 <p class="email-no mb-0">ex@example.com</p>
                             </li>
@@ -1582,16 +1568,7 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
-                            <li>
-                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
-                            </li>
-                            <li><a href="" class="insta">Instagram</a></li>
-                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
+                        <ul class="mb-3 footer-ul-first-col-2">
                             <li>
                                 <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
                             </li>
@@ -1601,7 +1578,17 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
+                        <ul class="mb-3 footer-ul-first-col-3">
+                            <li>
+                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
+                            </li>
+                            <li><a href="" class="insta">Instagram</a></li>
+                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="mb-3 footer-ul-first-col-4">
                             <li>
                                 <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
                             </li>
@@ -1721,6 +1708,24 @@
                     },
                 },
             });
+        });
+    </script>
+    <script>
+        var changevideo = document.getElementById("featuredVideo");
+
+        var links = document.querySelectorAll("a.link")
+        links.forEach(a => {
+            a.addEventListener("mousemove", () => {
+                if (a.matches(':hover')) {
+                    if (changevideo.src != a.getAttribute("link")) {
+                        changevideo.src = a.getAttribute("link");
+                    }
+
+                }
+            })
+        })
+        document.addEventListener('mousemove', () => {
+
         });
     </script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>

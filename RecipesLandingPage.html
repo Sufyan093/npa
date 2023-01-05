@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Style/style.css" />
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <title>Recipes page</title>
+</head>
+
+<body>
+    <section title="top-nav-section" class="top-nav">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-responsive">
+            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
+            </div>
+            <div class="mx-auto order-0">
+                <span class="font top-title-2 text-white text-center navbar-brand mx-auto">
+                    Tulsa BBQ Festival - Get your Tickets Today.Click here
+                </span>
+            </div>
+            <div class="w-100 order-2 pe-4 search-mob">
+                <div class="navbar-nav ml-auto justify-content-end">
+                    <form class="search-form" style="max-width: 250px; width: 100%">
+                        <input type="text" placeholder="Search.." name="search2" />
+                        <button type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <section title="Navbar" id="navbar">
+        <nav class="navbar navbar-light bg-white px-4">
+            <div class="container-fluid nav-mob">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/NPA.png" alt="" width="60%" class="d-inline-block align-text-top" />
+                </a>
+                <div class="d-flex gap-5 align-items-center px-5 logged-navbar">
+                    <a href="/index.html" class="logout_btn" type="button">
+                        Log out
+                    </a>
+                    <a href="#" class="account-btn" type="button">
+                        Account
+                    </a>
+                </div>
+        </nav>
+    </section>
+
+    <section title="mega-menu">
+        <div class="col-12 mx-auto">
+            <div class="content bg-danger">
+                <ul class="exo-menu gap-3">
+                    <li><a class="" href="#">About NPA</a></li>
+                    <li class=""><a href="#">Articles</a>
+                    </li>
+
+                    <li class="mega-drop-down"><a href="RecipesList.html">Recipes</a>
+                        <div class="animated fadeIn mega-menu" style="z-index:2">
+                            <div class="mega-menu-wrap px-3 py-5">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h4 class="row mega-title">Recipes</h4>
+                                        <ul class="stander">
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Beef</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Pork</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Poultry</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Seafood</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Sides</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Dips & Sauces</a></li>
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Vegetables</a>
+                                            </li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Rubs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h4 class="row mega-title">By Meal</h4>
+                                        <ul class="description">
+                                            <li><a href="#">Breakfast</a></li>
+                                            <li><a href="#">Lunch</a></li>
+                                            <li><a href="#">Dinner</a></li>
+                                            <li><a href="#">Appetizer</a></li>
+                                            <li><a href="#">Dessert</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h4 class="row mega-title">By Meat</h4>
+                                        <ul class="icon-des">
+                                            <li><a href="#">Brisket</a></li>
+                                            <li><a href="#">Pulled Pork</a></li>
+                                            <li><a href="#">Steaks</a></li>
+                                            <li><a href="#">chicken</a></li>
+                                            <li><a href="#">Ribs</a></li>
+                                            <li><a href="#">Prime Rib</a></li>
+                                            <li><a href="#">Turkey</a></li>
+                                            <li><a href="#">Game</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h4 class="row mega-title">By Wood</h4>
+                                        <ul class="by-wood">
+                                            <li><a href="#">Oak</a></li>
+                                            <li><a href="#">Mesquit</a></li>
+                                            <li><a href="#">Hickory</a></li>
+                                            <li><a href="#">Pecan</a></li>
+                                            <li><a href="#">Apple</a></li>
+                                            <li><a href="#">Cherry</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h4 class="row mega-title text-muted">Featured</h4>
+                                        <div>
+                                            <video id="featuredVideo" width="320" height="450" autoplay>
+                                                <source src="video/preview.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="slider-content">
+                                            <h5 class="featured-video-heading mb-3">Chipotie molasses barbecue sauce
+                                            </h5>
+                                        </div>
+                                        <div class="author-section d-flex gap-3 align-items-center">
+                                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                            <div class="d-flex flex-column">
+                                                <span class="author-name-video">by michael lane</span>
+                                                <span class="author-date-video">October 22,2022</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li><a href="videolandingpage.html">Videos</a></li>
+                    <li><a href="#">MemberShip</a></li>
+
+                    <li class="blog-drop-down"><a href="#">Events By State</a></li>
+                    <li class="images-drop-down"><a href="#">Restaurant</a></li>
+                    <li><a href="RecipesLandingPage.html">Shop</a></li>
+                    <a href="#" class="toggle-menu">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-12 mx-auto px-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <img class="img-fluid main-recipe-hero-img" src="image/recipelanding.jpg" alt="img"
+                            style="height: 100%;" />
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="slider-content">
+                            <h2 class="recp-landing-heading">black smoke: African Americans and the history of the
+                                united
+                                state of
+                                barbecue</h2>
+                            <p class="recipe-landing-subheading mb-4">every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.</p>
+                        </div>
+                        <div class="mb-4 d-flex gap-3 align-items-center author-image-mob">
+                            <img src="image/random.jpg" class="img-fluid recipe-land-author-avatar">
+                            <div class="d-flex flex-column w-100">
+                                <span class="recipe-land-author-name">by michael lane</span>
+                                <div class="d-flex align-items-center justify-content-between reviews-author-mob">
+                                    <span class="recipe-land-author-date">October 22,2022</span>
+                                    <div>
+                                        <ul class="d-flex gap-1 stars-list-mob">
+                                            <li><i class="fas fa-star star-color"></i></li>
+                                            <li><i class="fas fa-star star-color"></i></li>
+                                            <li><i class="fas fa-star star-color"></i></li>
+                                            <li><i class="fas fa-star star-color"></i></li>
+                                            <li><i class="fas fa-star star-color"></i></li>
+                                            <span class="review-title">4.1 from 72 reviews</span>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-heart herat-icon" aria-hidden="true"></i>
+                                        <span class="heart-counter">609</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <div class="d-flex border border-2 recp-landing-prepration">
+                                <div class="d-flex flex-column border-end prep-time-recp-land ">
+                                    <span class="recp-prep-time">prep time</span>
+                                    <p class="mb-0 recp-time-counter">30 Mins</p>
+                                </div>
+
+                                <div class="d-flex flex-column border-end prep-time-recp-land">
+                                    <span class="recp-prep-time">ingredient</span>
+                                    <p class="mb-0 recp-time-counter">8</p>
+                                </div>
+
+                                <div class="d-flex flex-column border-end prep-time-recp-land">
+                                    <span class="recp-prep-time">cook time</span>
+                                    <p class="mb-0 recp-time-counter">30 Mins</p>
+                                </div>
+
+                                <div class="d-flex flex-column border-end prep-time-recp-land">
+                                    <span class="recp-prep-time">serves</span>
+                                    <p class="mb-0 recp-time-counter">4</p>
+                                </div>
+
+                                <div class="d-flex flex-column prep-time-recp-land">
+                                    <span class="recp-prep-time">dificulty</span>
+                                    <p class="mb-0 recp-time-counter">hard</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="recp-main-video">
+                    <video id="video" width="400" controls>
+                        <source src="video/preview.mp4" type="video/mp4">
+                    </video>
+                    <i onClick="playVid()" type="button" id="play-button" class="far fa-play-circle play-btn-recp"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="ingredient-bg">
+                    <h2 class="spolight-video-line mb-5">
+                        <span>ingredients</span>
+                    </h2>
+                </div>
+                <div class="ingredient-data">
+                    <ul>
+                        <li>
+                            <h5 class="ingredient-data-title">2(1 Ib each) pork tenderloins</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">1 lemon</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">6 garlic cloves</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">2 spring fresh thyme, leaves only, plus more for</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">garnish</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">1 spring fresh rosemary, leaves only, plus more for</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">garnish</h5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">1 Tablespoon soy sauce</hh5>
+                        </li>
+                        <li>
+                            <h5 class="ingredient-data-title">2 Tablespoon Kosher salt</hh5>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="ingredient-bg">
+                    <h2 class="spolight-video-line mb-5">
+                        <span>instructions</span>
+                    </h2>
+                </div>
+                <div class="instruction-data">
+                    <ul class="mb-4">
+                        <li>
+                            <h1 class="instruction-steps">step 1</h1>
+                            <p class="instruction-steps-description">
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                            </p>
+                            <h5 class="instruction-steps-ingredients">ingredients</h5>
+                            <ul>
+                                <li class=""><span class="instruction-ingradient-title">2(1 Ib each) pork
+                                        tenderloins</span>
+                                </li>
+                                <li class=""><span class="instruction-ingradient-title">1 lemon</span></li>
+                                <li class=""><span class="instruction-ingradient-title">6 garlic cloves</span></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="mb-4">
+                        <hr class="instruction-steps-hr" />
+                    </div>
+                </div>
+
+                <div class="instruction-data">
+                    <ul class="mb-4">
+                        <li>
+                            <h1 class="instruction-steps">step 2</h1>
+                            <p class="instruction-steps-description">
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                            </p>
+                            <h5 class="instruction-steps-ingredients">ingredients</h5>
+                            <ul>
+                                <li class=""><span class="instruction-ingradient-title">2(1 Ib each) pork
+                                        tenderloins</span>
+                                </li>
+                                <li class=""><span class="instruction-ingradient-title">1 lemon</span></li>
+                                <li class=""><span class="instruction-ingradient-title">6 garlic cloves</span></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="mb-4">
+                        <hr class="instruction-steps-hr" />
+                    </div>
+                </div>
+
+                <div class="instruction-data">
+                    <ul class="mb-4">
+                        <li>
+                            <h1 class="instruction-steps">step 3</h1>
+                            <p class="instruction-steps-description">
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                            </p>
+                            <h5 class="instruction-steps-ingredients">ingredients</h5>
+                            <ul>
+                                <li class=""><span class="instruction-ingradient-title">2(1 Ib each) pork
+                                        tenderloins</span>
+                                </li>
+                                <li class=""><span class="instruction-ingradient-title">1 lemon</span></li>
+                                <li class=""><span class="instruction-ingradient-title">6 garlic cloves</span></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="mb-4">
+                        <hr class="instruction-steps-hr" />
+                    </div>
+                </div>
+
+
+                <div class="instruction-data">
+                    <ul class="mb-4">
+                        <li>
+                            <h1 class="instruction-steps">step 4</h1>
+                            <p class="instruction-steps-description">
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                            </p>
+                            <h5 class="instruction-steps-ingredients">ingredients</h5>
+                            <ul>
+                                <li class=""><span class="instruction-ingradient-title">2(1 Ib each) pork
+                                        tenderloins</span>
+                                </li>
+                                <li class=""><span class="instruction-ingradient-title">1 lemon</span></li>
+                                <li class=""><span class="instruction-ingradient-title">6 garlic cloves</span></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="mb-4">
+                        <hr class="instruction-steps-hr" />
+                    </div>
+                </div>
+
+
+                <div class="instruction-data">
+                    <ul class="mb-4">
+                        <li>
+                            <h1 class="instruction-steps">step 5</h1>
+                            <p class="instruction-steps-description">
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                                every once in a while, you come across a book so
+                                starting, so
+                                original, it
+                                makes you rethink your understanding of a subject you've studied for 25 years.
+                            </p>
+                            <h5 class="instruction-steps-ingredients">ingredients</h5>
+                            <ul>
+                                <li class=""><span class="instruction-ingradient-title">2(1 Ib each) pork
+                                        tenderloins</span>
+                                </li>
+                                <li class=""><span class="instruction-ingradient-title">1 lemon</span></li>
+                                <li class=""><span class="instruction-ingradient-title">6 garlic cloves</span></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="ingredient-bg">
+                    <h2 class="spolight-video-line mb-5">
+                        <span>Nutrition</span>
+                    </h2>
+                </div>
+                <div class="nutrition">
+                    <h1 class="serves-title">Serves: 1</h1>
+                    <ul class="px-3 nutrition-list">
+                        <li>
+                            <p class="nutrition-points mb-0">calories: 254kcal (13%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">carbohydrate: 41g (14%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">protein: 4g (8%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">fat: 9g (14%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">saturated fat: 5g (25%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">cholesterol: 55mg (18%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">sodium: 270mg (11%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">potassium: 168mg (5%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">fiber: 2g (8%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">sugar: 21g (23%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">vitamin A: 306IU (6%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">vitamin C: 13mg (16%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">calcium: 15mg (2%)</p>
+                        </li>
+                        <li>
+                            <p class="nutrition-points mb-0">iron: 1mg (6%)</p>
+                        </li>
+                    </ul>
+
+                    <p class="mb-0 nutrition-caption">all nutritional information is based on third party calculations
+                        and is only an estimate.each
+                        recipe and nutritional value will vary depending on the brands you use, measuring methods and
+                        portion sizes per household.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="ingredient-bg">
+                    <h2 class="spolight-video-line mb-5">
+                        <span>Related recipes</span>
+                    </h2>
+                </div>
+                <div class="related-recipes">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <img class="img-fluid mb-3 search-recipe-img" src="image/food.jpg" alt="img"></img>
+                                <div class="d-flex justify-content-between">
+                                    <p class="video-title">Recipes</p>
+                                    <div>
+                                        <span><i class="fa fa-heart herat-icon" aria-hidden="true"></i></span>
+                                        <span class="video-heart-counter">609</span>
+                                    </div>
+                                </div>
+                                <div class="slider-content">
+                                    <h5 class="related-recipes-heading mb-3">Chipotie molasses barbecue sauce</h5>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                    <div class="d-flex flex-column">
+                                        <span class="author-name-video">by michael lane</span>
+                                        <span class="author-date-video">October 22,2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <img class="img-fluid mb-3 search-recipe-img" src="image/food.jpg" alt="img"></img>
+                                <div class="d-flex justify-content-between">
+                                    <p class="video-title">Recipes</p>
+                                    <div>
+                                        <span><i class="fa fa-heart herat-icon" aria-hidden="true"></i></span>
+                                        <span class="video-heart-counter">609</span>
+                                    </div>
+                                </div>
+                                <div class="slider-content">
+                                    <h5 class="related-recipes-heading mb-3">Chipotie molasses barbecue sauce</h5>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                    <div class="d-flex flex-column">
+                                        <span class="author-name-video">by michael lane</span>
+                                        <span class="author-date-video">October 22,2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div>
+                                <img class="img-fluid mb-3 search-recipe-img" src="image/food.jpg" alt="img"></img>
+                                <div class="d-flex justify-content-between">
+                                    <p class="video-title">Recipes</p>
+                                    <div>
+                                        <span><i class="fa fa-heart herat-icon" aria-hidden="true"></i></span>
+                                        <span class="video-heart-counter">609</span>
+                                    </div>
+                                </div>
+                                <div class="slider-content">
+                                    <h5 class="related-recipes-heading mb-3">Chipotie molasses barbecue sauce</h5>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                    <div class="d-flex flex-column">
+                                        <span class="author-name-video">by michael lane</span>
+                                        <span class="author-date-video">October 22,2022</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="button" class="show-more-related-btn px-5 py-1">
+                            Show more
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="ingredient-bg">
+                    <h2 class="spolight-video-line mb-5">
+                        <span>reviews</span>
+                    </h2>
+                </div>
+
+                <div class="reviews">
+                    <div>
+                        <div class="d-flex mb-2">
+                            <ul class="d-flex gap-1">
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <span class="review-counter">4.1</span>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-3">
+                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                            <div class="d-flex flex-column">
+                                <span class="author-name-video">by michael lane</span>
+                                <span class="author-date-video">October 22,2022</span>
+                            </div>
+                        </div>
+                        <p class="reviews-comment">
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                        </p>
+                        <div class="mb-4">
+                            <hr class="instruction-steps-hr" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex mb-2">
+                            <ul class="d-flex gap-1">
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <span class="review-counter">4.1</span>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-3">
+                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                            <div class="d-flex flex-column">
+                                <span class="author-name-video">by michael lane</span>
+                                <span class="author-date-video">October 22,2022</span>
+                            </div>
+                        </div>
+                        <p class="reviews-comment">
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                        </p>
+                        <div class="mb-4">
+                            <hr class="instruction-steps-hr" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex mb-2">
+                            <ul class="d-flex gap-1">
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <span class="review-counter">4.1</span>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-3">
+                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                            <div class="d-flex flex-column">
+                                <span class="author-name-video">by michael lane</span>
+                                <span class="author-date-video">October 22,2022</span>
+                            </div>
+                        </div>
+                        <p class="reviews-comment">
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                        </p>
+                        <div class="mb-4">
+                            <hr class="instruction-steps-hr" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="d-flex mb-2">
+                            <ul class="d-flex gap-1">
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <li><i class="fas fa-star star-color"></i></li>
+                                <span class="review-counter">4.1</span>
+                            </ul>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-3">
+                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                            <div class="d-flex flex-column">
+                                <span class="author-name-video">by michael lane</span>
+                                <span class="author-date-video">October 22,2022</span>
+                            </div>
+                        </div>
+                        <p class="reviews-comment">
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                            every once in a while, you come across a book so
+                            starting, so
+                            original, it
+                            makes you rethink your understanding of a subject you've studied for 25 years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="mb-5">
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="pagination-section">
+                    <nav aria-label="Page navigation example">
+                        <ul class="d-flex justify-content-center gap-4 align-items-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="mt-4">
+        <div class="footer-bg">
+            <div class="container">
+                <div class="row padding-y">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="image/whitelogo.png" alt="logo" width="100%"
+                                class="d-inline-block align-text-top img-fluid" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="footer-ul-first-col mb-3">
+                            <li>
+                                <h4 class="footer-heading-1 mb-3">Lorem Ipsum</h4>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center footer-phon-sec">
+                                <strong class="phoneno">P.</strong>
+                                <p class="ph-no mb-0">217-597-8456</p>
+                            </li>
+                            <li class="d-flex gap-2 align-items-center footer-mail-sec">
+                                <strong class="email">E.</strong>
+                                <p class="email-no mb-0">ex@example.com</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1 vl-mob">
+                        <div class="d-flex justify-content-center">
+                            <span class="verticle-border"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="mb-3 footer-ul-first-col-2">
+                            <li>
+                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
+                            </li>
+                            <li><a href="" class="insta">Instagram</a></li>
+                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="mb-3 footer-ul-first-col-3">
+                            <li>
+                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
+                            </li>
+                            <li><a href="" class="insta">Instagram</a></li>
+                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="mb-3 footer-ul-first-col-4">
+                            <li>
+                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
+                            </li>
+                            <li><a href="" class="insta">Instagram</a></li>
+                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.plyr.io/3.7.2/plyr.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/NAP.js"></script>
+    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script>
+        var x = document.getElementById("video");
+        var y = document.getElementById("play-button")
+
+        function playVid() {
+            x.play();
+            y.style.display = "none";
+        }
+    </script>
+    <script>
+        var changevideo = document.getElementById("featuredVideo");
+
+        var links = document.querySelectorAll("a.link")
+        links.forEach(a => {
+            a.addEventListener("mousemove", () => {
+                if (a.matches(':hover')) {
+                    if (changevideo.src != a.getAttribute("link")) {
+                        changevideo.src = a.getAttribute("link");
+                    }
+
+                }
+            })
+        })
+        document.addEventListener('mousemove', () => {
+
+        });
+    </script>
+</body>
+
+</html>

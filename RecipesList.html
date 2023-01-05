@@ -21,7 +21,7 @@
             <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
             </div>
             <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
+                <span class="font top-title-2 text-white text-center navbar-brand mx-auto">
                     Tulsa BBQ Festival - Get your Tickets Today.Click here
                 </span>
             </div>
@@ -42,10 +42,10 @@
     <section title="Navbar" id="navbar">
         <nav class="navbar navbar-light bg-white px-4">
             <div class="container-fluid nav-mob">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="image/NPA.png" alt="" width="60%" class="d-inline-block align-text-top" />
                 </a>
-                <div class="d-flex gap-5 align-items-center px-5">
+                <div class="d-flex gap-5 align-items-center px-5 logged-navbar">
                     <a href="/index.html" class="logout_btn" type="button">
                         Log out
                     </a>
@@ -60,24 +60,28 @@
         <div class="col-12 mx-auto">
             <div class="content bg-danger">
                 <ul class="exo-menu gap-3">
-                    <li><a class="" href="#">BBQ Experts</a></li>
-                    <li class=""><a href="#">Articles</a></li>
+                    <li><a class="" href="#">About NPA</a></li>
+                    <li class=""><a href="#">Articles</a>
+                    </li>
 
-                    <li class="mega-drop-down"><a href="#">Recipes</a>
+                    <li class="mega-drop-down"><a href="RecipesList.html">Recipes</a>
                         <div class="animated fadeIn mega-menu" style="z-index:2">
                             <div class="mega-menu-wrap px-3 py-5">
                                 <div class="row">
                                     <div class="col-md-2">
                                         <h4 class="row mega-title">Recipes</h4>
                                         <ul class="stander">
-                                            <li><a href="#">Beef</a></li>
-                                            <li><a href="#">Pork</a></li>
-                                            <li><a href="#">Poultry</a></li>
-                                            <li><a href="#">Seafood</a></li>
-                                            <li><a href="#">Sides</a></li>
-                                            <li><a href="#">Dips & Sauces</a></li>
-                                            <li><a href="#">Vegetables</a></li>
-                                            <li><a href="#">Rubs</a></li>
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Beef</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Pork</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Poultry</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Seafood</a></li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Sides</a></li>
+                                            <li><a href="#" class="link" link="video/test.mp4">Dips & Sauces</a></li>
+                                            <li><a href="#" class="link"
+                                                    link="https://www.w3schools.com/html/mov_bbb.mp4">Vegetables</a>
+                                            </li>
+                                            <li><a href="#" class="link" link="video/preview.mp4">Rubs</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-2">
@@ -117,9 +121,22 @@
                                     </div>
                                     <div class="col-md-4">
                                         <h4 class="row mega-title text-muted">Featured</h4>
-                                        <img class="img-responsive"
-                                            src="https://3.bp.blogspot.com/-rUk36pd-LbM/VcLb48X4f-I/AAAAAAAAGCI/Y_UxBAgEqwA/s1600/Magento_themes.jpg">
-                                        <p>Lorem ipsum dolor sit amet</p>
+                                        <div>
+                                            <video id="featuredVideo" width="320" height="450" autoplay>
+                                                <source src="video/preview.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="slider-content">
+                                            <h5 class="featured-video-heading mb-3">Chipotie molasses barbecue sauce
+                                            </h5>
+                                        </div>
+                                        <div class="author-section d-flex gap-3 align-items-center">
+                                            <img src="image/random.jpg" class="img-fluid author-avatar-video">
+                                            <div class="d-flex flex-column">
+                                                <span class="author-name-video">by michael lane</span>
+                                                <span class="author-date-video">October 22,2022</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -128,12 +145,12 @@
 
 
 
-                    <li><a href="#">Videos</a></li>
+                    <li><a href="videolandingpage.html">Videos</a></li>
                     <li><a href="#">MemberShip</a></li>
 
                     <li class="blog-drop-down"><a href="#">Events By State</a></li>
                     <li class="images-drop-down"><a href="#">Restaurant</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="RecipesLandingPage.html">Shop</a></li>
                     <a href="#" class="toggle-menu">
                         <i class="fas fa-bars"></i>
                     </a>
@@ -141,17 +158,20 @@
             </div>
         </div>
     </section>
+
     <section title="" class="mb-3">
         <div class="card text-white rounded-0 px-4 border-0">
             <img src="image/recipelist.jpg" class="img-fluid recipe-lsit-image" alt="Stony Beach" />
             <div class="card-img-overlay px-5">
                 <h1 class="card-title recipe-list-main-heading mb-4">Some featured recipe title lorem ipsum</h1>
-                <p class="card-text recipe-list-sub-titile">
-                    every one in a while, you come across a book so startling, <br />
-                    so original, it makes you rethink
-                    your understanding of a subject<br />
-                    you've studied for 25 years.
-                </p>
+                <div class="w-50 mb-4 hero-para-w">
+                    <p class="card-text recipe-list-sub-titile">
+                        every one in a while, you come across a book so startling,
+                        so original, it makes you rethink
+                        your understanding of a subject
+                        you've studied for 25 years.
+                    </p>
+                </div>
                 <div class="card-text" style="max-width: 600px;">
                     <div class="d-flex border border-2 food-grid">
                         <div class="d-flex flex-column border-end prep-time-parent ">
@@ -174,20 +194,20 @@
                             <p class="mb-0 recipe-time-counter">4</p>
                         </div>
 
-                        <div class="d-flex flex-column  prep-time-parent">
+                        <div class="d-flex flex-column prep-time-parent">
                             <span class="prep-time">dificulty</span>
                             <p class="mb-0 recipe-time-counter">hard</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-text">
+                <div class="card-text cook-this-mob">
                     <button class="cook-this-now py-1">cook this Now</button>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="col-12 mx-auto translate-custom">
-                <div class="d-flex justify-content-center" style="gap: 2rem;">
+                <div class="d-flex justify-content-center anim-category" style="gap: 2rem;">
                     <div class="d-flex flex-column">
                         <div class="cow-section mb-2">
                             <img src="image/cow-silhouette.png" class="cow-img" alt="" />
@@ -251,21 +271,14 @@
 
 
     <section class="mb-5 px-4">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    Search Recipes
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-            </div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>Search Recipes</span>
+        </h2>
+
         <div class="container-fluid">
             <div class="col-12 mx-auto">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="col-sm-12 col-md-6 col-lg-3 filter-p-mob">
                         <select class="form-select meal-type mb-5" aria-label="Default select example">
                             <option selected>Meal Type</option>
                             <option value="1">One</option>
@@ -293,7 +306,7 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select>
-                        <div class="d-flex gap-1">
+                        <div class="d-flex gap-1 search-tag-mob">
                             <p class="search-title mb-0">Search: </p>
                             <span class="search-tag px-3">lunch</span>
                             <span class="search-tag px-3">pork</span>
@@ -443,69 +456,69 @@
         </div>
     </section>
 
-    <section class="mb-5 px-4">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    Recipes by Category
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-            </div>
-        </nav>
+    <section class="mb-5 px-5">
+        <h2 class="spolight-video-line mb-5">
+            <span> Recipes by Category</span>
+        </h2>
+
         <div class="container-fluid">
             <div class="col-12 mx-auto">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="mb-4">
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title"> Entrees</h5>
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title"> Entrees</h5>
+                            </a>
                         </div>
+
                         <div>
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title">Dins and sauces</h5>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="mb-4">
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title">sides</h5>
-                        </div>
-                        <div>
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title">vegetables</h5>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="mb-4">
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title">Appetizers</h5>
-                        </div>
-                        <div>
-                            <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
-                            <h5 class="text-center category-title">desserts</h5>
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title">Dins and sauces</h5>
+                            </a>
                         </div>
                     </div>
 
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-4">
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title">sides</h5>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title">vegetables</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="mb-4">
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title">Appetizers</h5>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="image/food2.jpg" class="img-fluid Category-img mb-3" alt="img">
+                                <h5 class="text-center category-title">desserts</h5>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="mb-3 px-4">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    experts latest Recipes
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-            </div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>experts latest Recipes</span>
+        </h2>
+
         <div class="container-fluid">
             <div class="col-12 mx-auto">
                 <div class="row">
@@ -655,17 +668,9 @@
     </section>
 
     <section class="mb-3 px-4">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    most popular Recipes
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-            </div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>most popular Recipes</span>
+        </h2>
 
         <div class="container-fluid">
             <div class="col-12 mx-auto">
@@ -962,17 +967,9 @@
     </section>
 
     <section class="mb-5 px-4">
-        <nav class="navbar navbar-expand-md navbar-dark navbar-responsive splight-video mb-5">
-            <div class="navbar-collapse collapse w-100 order-md-0 dual-collapse2">
-            </div>
-            <div class="mx-auto order-0">
-                <span class="font top-title text-white text-center navbar-brand mx-auto">
-                    Recipes by wood type
-                </span>
-            </div>
-            <div class="w-100 order-2 pe-4 search-mob">
-            </div>
-        </nav>
+        <h2 class="spolight-video-line mb-5">
+            <span>Recipes by wood type</span>
+        </h2>
         <div class="container-fluid">
             <div class="col-12 mx-auto">
                 <div class="row">
@@ -1006,15 +1003,15 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul class="">
+                        <ul class="footer-ul-first-col mb-3">
                             <li>
                                 <h4 class="footer-heading-1 mb-3">Lorem Ipsum</h4>
                             </li>
-                            <li class="d-flex gap-2 align-items-center">
+                            <li class="d-flex gap-2 align-items-center footer-phon-sec">
                                 <strong class="phoneno">P.</strong>
                                 <p class="ph-no mb-0">217-597-8456</p>
                             </li>
-                            <li class="d-flex gap-2 align-items-center">
+                            <li class="d-flex gap-2 align-items-center footer-mail-sec">
                                 <strong class="email">E.</strong>
                                 <p class="email-no mb-0">ex@example.com</p>
                             </li>
@@ -1028,16 +1025,7 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
-                            <li>
-                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
-                            </li>
-                            <li><a href="" class="insta">Instagram</a></li>
-                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
+                        <ul class="mb-3 footer-ul-first-col-2">
                             <li>
                                 <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
                             </li>
@@ -1047,7 +1035,17 @@
                     </div>
 
                     <div class="col-sm-6 col-md-3 col-lg-2">
-                        <ul>
+                        <ul class="mb-3 footer-ul-first-col-3">
+                            <li>
+                                <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
+                            </li>
+                            <li><a href="" class="insta">Instagram</a></li>
+                            <li><a href="" class="nav-item-2">lorem ipsum</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3 col-lg-2">
+                        <ul class="mb-3 footer-ul-first-col-4">
                             <li>
                                 <h6 class="footer-heading-2 mb-3">lorem ipsum</h6>
                             </li>
@@ -1162,6 +1160,24 @@
                     },
                 },
             });
+        });
+    </script>
+    <script>
+        var changevideo = document.getElementById("featuredVideo");
+
+        var links = document.querySelectorAll("a.link")
+        links.forEach(a => {
+            a.addEventListener("mousemove", () => {
+                if (a.matches(':hover')) {
+                    if (changevideo.src != a.getAttribute("link")) {
+                        changevideo.src = a.getAttribute("link");
+                    }
+
+                }
+            })
+        })
+        document.addEventListener('mousemove', () => {
+
         });
     </script>
     <script src="OwlCarousel/dist/owl.carousel.min.js"></script>

@@ -8,21 +8,9 @@ $(function () {
 
 });
 
-const videoPlayer = document.querySelector('.video-player')
-const video = videoPlayer.querySelector('.video')
-const playButton = videoPlayer.querySelector('#play-button')
-
-// playButton.addEventListener('click', (e) => {
-//    if (video.paused) {
-//       video.play()
-//       e.target.textContent = '❚ ❚'
-//    } else {
-//       video.pause()
-//       e.target.textContent = '►'
-//    }
-// })
-
-
+const videoPlayer = document.querySelector('.video-player');
+const video = videoPlayer.querySelector('.video');
+const playButton = videoPlayer.querySelector('#play-button');
 
 playButton.addEventListener('click', function (e) {
    e.preventDefault();
@@ -46,16 +34,6 @@ const videoPlayerba = document.querySelector('.video-player-2')
 const videoba = videoPlayerba.querySelector('.video-2')
 const playButtonba = videoPlayerba.querySelector('#play-button-2')
 
-// playButtonba.addEventListener('click', (e) => {
-//    if (videoba.paused) {
-//       videoba.play()
-//       e.target.textContent = '❚ ❚'
-//    } else {
-//       videoba.pause()
-//       e.target.textContent = '►'
-//    }
-// })
-
 playButtonba.addEventListener('click', function (e) {
    e.preventDefault();
    if (!videoba.paused) {
@@ -67,3 +45,6 @@ playButtonba.addEventListener('click', function (e) {
    playButtonba.classList.toggle('fa-pause-circle');
    return false;
 }, false);
+
+
+
